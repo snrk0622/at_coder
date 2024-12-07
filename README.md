@@ -11,6 +11,11 @@
 acc new ${contest_id}
 ```
 
+## add tasks
+```
+add add
+```
+
 ## test
 ```
 oj t -c "python3 ./main.py" -d ./tests/
