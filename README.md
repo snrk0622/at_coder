@@ -26,3 +26,10 @@ oj t -c "python3 ./main.py" -d ./tests/
 ```
 acc s main.py -- --guess-python-interpreter pypy
 ```
+
+## check list
+- [ ] 全探索  
+  - オーダー10^8程度であれば2分以内にAC可能
+- [ ] 二分探索  
+  - リストが昇順・降順である必要があるが、条件を満たせば線形探索よりも高速
+  - また、bisectで降順のリストを扱う場合は、リストの各要素と検索値をマイナスに反転する必要がある
