@@ -33,3 +33,7 @@ acc s main.py -- --guess-python-interpreter pypy
 - [ ] 二分探索  
   - リストが昇順・降順である必要があるが、条件を満たせば線形探索よりも高速
   - また、bisectで降順のリストを扱う場合は、リストの各要素と検索値をマイナスに反転する必要がある
+  - [bisect](https://docs.python.org/ja/3/library/bisect.html)
+    - bisect.bisect()
+    - bisect.bisect_left()
+    - bisect.bisect_right()
