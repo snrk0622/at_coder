@@ -34,6 +34,9 @@ acc s main.py -- --guess-python-interpreter pypy
   - リストが昇順・降順である必要があるが、条件を満たせば線形探索よりも高速
   - また、bisectで降順のリストを扱う場合は、リストの各要素と検索値をマイナスに反転する必要がある
   - [bisect](https://docs.python.org/ja/3/library/bisect.html)
-    - bisect.bisect()
     - bisect.bisect_left()
+      - 挿入点は既存のどのエントリーより前（左）
     - bisect.bisect_right()
+      - 挿入点は既存のどのエントリーより後（右）
+    - bisect.bisect()
+      - bisect.bisect_right()と同じ挙動
