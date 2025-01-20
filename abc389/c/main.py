@@ -1,3 +1,5 @@
+# TLE * 2 -> AC
+
 Q = int(input())
 
 queue = []
