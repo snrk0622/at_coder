@@ -11,13 +11,15 @@ reversedS = S[::-1]
 keys = ['eraser', 'erase', 'dreamer', 'dream']
 reversedKeys = list(map(lambda x: x[::-1], keys))
 
-can = False
-for i in range(len(S)):
+can = True
+i = 0
+while i < len(reversedS):
   can2 = False # keysのいずれかでdevideできるか
   for key in reversedKeys:
-    if reversedS[i:i+len(key)+1] == key:
+    if reversedS[i:i+len(key)] == key:
       can2 = True
       i += len(key)
+      break
   if not can2:
     can = False
     break
