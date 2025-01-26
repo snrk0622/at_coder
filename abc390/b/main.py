@@ -4,7 +4,6 @@ import math
 
 N = int(input())
 AList = list(map(int, input().split()))
-genAList = []
 
 a1 = AList[0]
 r = AList[1] / a1
